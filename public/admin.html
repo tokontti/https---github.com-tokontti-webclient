@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>User Management</h1>
+    <div>
+        <h2>Create New User</h2>
+        <form id="create-user">
+            <label for="create-username">Username:</label>
+            <input type="text" id="create-username" name="create-username" required><br><br>
+            <label for="create-password">Password:</label>
+            <input type="password" id="create-password" name="create-password" required><br><br>
+            <label for="create-age">Age:</label>
+            <input type="number" id="create-age" name="create-age" required><br><br>
+            <label for="create-role">Role:</label>
+            <input type="text" id="create-role" name="create-role" required><br><br>
+            <button type="submit">Create User</button>
+        </form>
+    </div>
+    <div>
+        <h2>Update User</h2>
+        <form id="update-user">
+            <label for="update-id">User ID:</label>
+            <input type="number" id="update-id" name="update-id" required><br><br>
+            <label for="update-username">New Username:</label>
+            <input type="text" id="update-username" name="update-username" required><br><br>
+            <label for="update-age">New Age:</label>
+            <input type="number" id="update-age" name="update-age" required><br><br>
+            <label for="update-role">New Role:</label>
+            <input type="text" id="update-role" name="update-role" required><br><br>
+            <button type="submit">Update User</button>
+        </form>
+    </div>
+    <div>
+        <h2>Update User Password</h2>
+        <form id="update-password">
+            <label for="password-id">User ID:</label>
+            <input type="number" id="password-id" name="password-id" required><br><br>
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" name="new-password" required><br><br>
+            <button type="submit">Update Password</button>
+        </form>
+    </div>
+    <div>
+        <h2>Delete User</h2>
+        <form id="delete-user">
+            <label for="delete-id">User ID:</label>
+            <input type="number" id="delete-id" name="delete-id" required><br><br>
+            <button type="submit">Delete User</button>
+        </form>
+    </div>
+    <div>
+        <h2>Get User By ID</h2>
+        <form id="get-user">
+            <label for="get-id">User ID:</label>
+            <input type="number" id="get-id" name="get-id" required><br><br>
+            <button type="submit">Get User</button>
+
+        </form>
+    </div>
+    <div>
+        <h2>Get All Users</h2>
+        <button id="get-all-users">Get All Users</button>
+        <div id="result"></div> 
+    <script src="admin.js"></script>
+</body>
+</html>
